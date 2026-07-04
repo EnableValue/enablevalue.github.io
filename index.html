@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENABLE VALUE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    background:#111;
+    color:#f5f5f5;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+}
+
+.container{
+    max-width:760px;
+    text-align:center;
+}
+
+h1{
+    font-size:4rem;
+    letter-spacing:6px;
+    margin-bottom:25px;
+}
+
+.tagline{
+    color:#9fd3ff;
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+p{
+    font-size:1.15rem;
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+.card{
+    margin-top:40px;
+    padding:30px;
+    border:1px solid #333;
+    border-radius:12px;
+    background:#181818;
+}
+
+a{
+    color:#7ecbff;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.footer{
+    margin-top:45px;
+    color:#777;
+    font-size:.9rem;
+}
+
+.cursor{
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ENABLE VALUE</h1>
+
+<div class="tagline">
+You made it. This is definitely the right place.
+</div>
+
+<p>
+Welcome to <strong>ENABLE VALUE</strong>.
+</p>
+
+<p>
+Our website is currently being handcrafted by a sophisticated collection of
+AI models, neural networks, coffee, and questionable engineering decisions.
+</p>
+
+<p>
+Unfortunately, the AI keeps saying:
+</p>
+
+<p style="font-family:monospace;color:#8cff8c;">
+&gt; "One more prompt should do it..."<span class="cursor">▋</span>
+</p>
+
+<div class="card">
+
+<p>
+While our future legendary website is compiling...
+</p>
+
+<p>
+If you'd like to talk about software, AI, robotics, embedded systems,
+or simply say hello, we'd love to hear from you.
+</p>
+
+<p id="mail"></p>
+
+</div>
+
+<div class="footer">
+© 2026 ENABLE VALUE
+</div>
+
+</div>
+
+<script>
+(() => {
+
+    const data = [
+        104,101,108,108,111,
+        64,
+        101,110,97,98,108,101,
+        118,97,108,117,101,
+        46,
+        99,111,109
+    ];
+
+    const decode = a =>
+        a.reduce(
+            (s,v)=>s+String.fromCharCode(v),
+            ""
+        );
+
+    const e = decode(data);
+
+    const link = document.createElement("a");
+    link.href = "mailto:"+e;
+    link.textContent = e;
+
+    document.getElementById("mail").appendChild(link);
+
+})();
+</script>
+
+</body>
+</html>
